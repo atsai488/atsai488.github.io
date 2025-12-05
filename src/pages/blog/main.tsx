@@ -8,7 +8,7 @@ function Main() {
   const handleBack = () => setActivePost(null);
 
   return (
-    <div className="ml-5 pt-1">
+    <div className="ml-5 pt-1 w-1/2">
       <h3 className="text-sm font-bold mb-3">I think a little sometimes</h3>
 
       {activePost === null && (
@@ -50,14 +50,14 @@ function Main() {
                           href={item.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-500 underline text-xs mt-1"
+                          className="text-blue-500 underline text-xs mt-3"
                         >
                           {item.text}
                         </a>
                       );
                     }
 
-                    return <p className="text-xs mt-1" key={j}>{item.text}</p>;
+                    return <p className="text-xs mt-3" key={j}>{item.text}</p>;
                   })}
               </div>
             ))}
