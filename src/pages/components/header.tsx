@@ -15,6 +15,7 @@ function Header() {
 
         <nav className="flex w-1/2 justify-end gap-4">
           <NavButton to='/' label='home' />
+          <NavButton to='/whoami' label='me' />
           <NavButton to='/cafe' label='sweets' />
           <NavButton to='/blog' label='blah blah' />
         </nav>
